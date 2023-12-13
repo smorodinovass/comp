@@ -1,0 +1,12 @@
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  colorization:
+    lang: Dockerfile
+    handler: .
+    image: ssmorodinova/local-openfaas-colorization
+    environment:
+      read_timeout: 60
+      write_timeout: 60
