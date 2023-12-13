@@ -5,8 +5,8 @@ provider:
 functions:
   colorization:
     lang: Dockerfile
-    handler: .
-    image: ssmorodinova/local-openfaas-colorization
+    handler: ./local-openfaas-colorization
+    image: ssmorodinova/local-openfaas-colorization:latest
     environment:
       read_timeout: 60
       write_timeout: 60
